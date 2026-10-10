@@ -1,0 +1,15 @@
+# Claude Code — local settings (never track)
+.claude/
+
+# OS noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Secrets / environment
+.env
+.env.*
+!.env.example

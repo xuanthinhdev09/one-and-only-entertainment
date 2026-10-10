@@ -1,0 +1,160 @@
+/* ============================================
+   One and Only Entertainment — main.css
+   Luxury dark theme: black + metallic gold + silver + crimson
+   ============================================ */
+
+:root {
+  --black: #000000;
+  --black-soft: #0b0b0b;
+  --black-card: #111111;
+  --gold: #ffd700;
+  --gold-deep: #d4af37;
+  --silver: #c0c0c0;
+  --crimson: #dc143c;
+  --cta: #ff6b1a;
+  --cta-hover: #e85d0f;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+}
+
+body {
+  background-color: var(--black);
+  color: #e5e5e5;
+  font-family: "Inter", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- Gold gradient text ---------- */
+.text-gold-gradient {
+  background: linear-gradient(
+    135deg,
+    #fff3b0 0%,
+    #ffd700 30%,
+    #d4af37 55%,
+    #fff3b0 80%,
+    #d4af37 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* ---------- Buttons ---------- */
+.btn-gold {
+  background: linear-gradient(135deg, #b8860b, #ffd700 45%, #fff3b0 55%, #d4af37);
+  background-size: 200% 200%;
+  color: #000;
+  transition: all 0.3s ease;
+}
+.btn-gold:hover {
+  background-position: 100% 100%;
+  box-shadow: 0 0 24px rgba(255, 215, 0, 0.45);
+  transform: translateY(-2px);
+}
+
+.btn-cta {
+  background: linear-gradient(135deg, #ff6b1a, #ff9a3d);
+  color: #000;
+  transition: all 0.3s ease;
+}
+.btn-cta:hover {
+  box-shadow: 0 0 28px rgba(255, 107, 26, 0.55);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  border: 1px solid var(--gold-deep);
+  color: var(--gold);
+  background: transparent;
+  transition: all 0.3s ease;
+}
+.btn-outline:hover {
+  background: rgba(255, 215, 0, 0.08);
+  border-color: var(--gold);
+}
+
+/* Shine sweep */
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+}
+.btn-shine::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -80%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+  transform: skewX(-20deg);
+  transition: left 0.6s ease;
+}
+.btn-shine:hover::after {
+  left: 120%;
+}
+
+/* ---------- Reveal on scroll (JS-gated) ---------- */
+.js-anim .reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.js-anim .reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- Hero glow ---------- */
+.hero-glow::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 20%, rgba(255, 215, 0, 0.12), transparent 50%),
+    radial-gradient(ellipse at 80% 70%, rgba(220, 20, 60, 0.1), transparent 55%);
+  pointer-events: none;
+}
+
+/* ---------- Package card hover ---------- */
+.package-card {
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.package-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--gold);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* ---------- Entertainer monogram placeholder ---------- */
+.monogram {
+  background:
+    radial-gradient(circle at 50% 35%, rgba(255, 215, 0, 0.2), transparent 60%),
+    linear-gradient(160deg, #1a1a1a, #000);
+}
+
+/* ---------- Sticky header state ---------- */
+#site-header.is-scrolled {
+  background: rgba(0, 0, 0, 0.92);
+}
+
+/* ---------- Scrollbar ---------- */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0b0b;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#d4af37, #8a6d1a);
+  border-radius: 8px;
+}
+
+/* ---------- Selection ---------- */
+::selection {
+  background: rgba(255, 215, 0, 0.3);
+  color: #fff;
+}

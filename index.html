@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>One and Only Entertainment — Premium Party Entertainers</title>
+  <meta name="description" content="One and Only Entertainment — premium bachelor party entertainers, party bus packages and VIP casino event entertainment. Nationwide VIP service." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            black: { DEFAULT: "#000000", soft: "#0B0B0B", card: "#111111" },
+            gold: { DEFAULT: "#FFD700", deep: "#D4AF37" },
+            silver: { DEFAULT: "#C0C0C0" },
+            crimson: { DEFAULT: "#DC143C" },
+            cta: { DEFAULT: "#FF6B1A", hover: "#E85D0F" },
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', "serif"],
+            sans: ['"Inter"', "system-ui", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="bg-black text-neutral-200 font-sans antialiased">
+
+  <!-- ===================== HEADER ===================== -->
+  <header id="site-header" class="fixed top-0 inset-x-0 z-50 bg-black/70 backdrop-blur-md border-b border-white/5 transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <a href="#home" class="flex items-center gap-3">
+          <svg class="h-9 w-9" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <defs>
+              <linearGradient id="goldGrad" x1="3" y1="4" x2="21" y2="19" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FFE680" />
+                <stop offset="0.5" stop-color="#FFD700" />
+                <stop offset="1" stop-color="#D4AF37" />
+              </linearGradient>
+            </defs>
+            <path d="M3 19h18M4 9l4 3 4-6 4 6 4-3-1 9H5L4 9z" fill="url(#goldGrad)" stroke="#B8860B" stroke-width="0.5" />
+          </svg>
+          <span class="font-display text-lg sm:text-xl font-bold leading-tight text-gold-gradient">One and Only<br class="hidden sm:block" />Entertainment</span>
+        </a>
+
+        <!-- Desktop nav -->
+        <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-neutral-300">
+          <a href="#home" class="hover:text-gold transition-colors">Home</a>
+          <a href="#packages" class="hover:text-gold transition-colors">Packages</a>
+          <a href="#entertainers" class="hover:text-gold transition-colors">Entertainers</a>
+          <a href="#discounts" class="hover:text-gold transition-colors">Discounts</a>
+          <a href="#contact" class="hover:text-gold transition-colors">Contact Us</a>
+        </nav>
+
+        <!-- Desktop CTA -->
+        <div class="hidden md:block">
+          <a href="tel:+15551234567" class="btn-gold btn-shine inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-semibold text-sm">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.22a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            Call Richie: (555) 123-4567
+          </a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <button id="menu-btn" class="lg:hidden text-neutral-200 p-2" aria-expanded="false" aria-label="Toggle menu">
+          <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-black/95 border-t border-white/10">
+      <nav class="max-w-7xl mx-auto px-4 py-4 flex flex-col gap-4 text-base font-medium">
+        <a href="#home" class="hover:text-gold">Home</a>
+        <a href="#packages" class="hover:text-gold">Packages</a>
+        <a href="#entertainers" class="hover:text-gold">Entertainers</a>
+        <a href="#discounts" class="hover:text-gold">Discounts</a>
+        <a href="#contact" class="hover:text-gold">Contact Us</a>
+        <a href="tel:+15551234567" class="btn-gold inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full font-semibold mt-2">
+          Call Richie: (555) 123-4567
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="home" class="hero-glow relative min-h-screen flex items-center pt-20 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 relative">
+      <span class="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-gold">
+        <span class="h-1.5 w-1.5 rounded-full bg-gold"></span>
+        Nationwide VIP Service
+      </span>
+
+      <h1 class="mt-6 font-display text-4xl sm:text-6xl lg:text-7xl font-extrabold leading-[1.05] text-gold-gradient">
+        WHERE ENTERTAINMENT<br />MEETS CLASS
+      </h1>
+
+      <p class="mt-6 text-lg sm:text-xl text-neutral-300 max-w-2xl">
+        Premium Bachelor Party Entertainers for Unforgettable Events
+      </p>
+
+      <div class="mt-10 flex flex-wrap gap-4">
+        <a href="#contact" class="btn-cta btn-shine inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-base">
+          Book Party Now
+        </a>
+        <a href="tel:+15551234567" class="btn-outline inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-base">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.22a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" />
+          </svg>
+          Call Richie
+        </a>
+      </div>
+
+      <div class="mt-14 flex flex-wrap items-center gap-x-8 gap-y-3 text-sm text-neutral-400">
+        <span class="flex items-center gap-2"><span class="text-gold">★</span> Top Tier Event Destinations</span>
+        <span class="flex items-center gap-2"><span class="text-gold">★</span> Discreet &amp; Professional</span>
+        <span class="flex items-center gap-2"><span class="text-gold">★</span> 24/7 Booking</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PACKAGES ===================== -->
+  <section id="packages" class="py-24 bg-black-soft">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto reveal">
+        <span class="text-xs font-semibold uppercase tracking-[0.25em] text-silver">Featured Packages</span>
+        <h2 class="mt-3 font-display text-3xl sm:text-5xl font-bold text-gold-gradient">Curated VIP Experiences</h2>
+        <p class="mt-4 text-neutral-400">Packages Starting at <span class="text-gold font-semibold">$250</span></p>
+      </div>
+
+      <div class="mt-16 grid md:grid-cols-3 gap-8">
+        <!-- Bachelor Party -->
+        <article class="package-card reveal rounded-2xl border border-white/10 bg-black-card p-8">
+          <span class="inline-flex items-center gap-2 rounded-full bg-crimson/15 text-crimson text-xs font-bold uppercase tracking-wider px-3 py-1">Most Popular</span>
+          <h3 class="mt-4 font-display text-2xl font-bold text-gold">Bachelor Party Package</h3>
+          <p class="mt-1 text-sm text-neutral-400">The Ultimate Send-Off</p>
+          <ul class="mt-6 space-y-3 text-sm text-neutral-300">
+            <li class="flex gap-2"><span class="text-gold">✦</span> Premium entertainers</li>
+            <li class="flex gap-2"><span class="text-gold">✦</span> Top Tier Event Destinations</li>
+            <li class="flex gap-2"><span class="text-gold">✦</span> Custom themes &amp; outfits</li>
+            <li class="flex gap-2"><span class="text-gold">✦</span> Discreet &amp; professional</li>
+          </ul>
+          <p class="mt-6 text-3xl font-bold text-white">from <span class="text-gold-gradient">$250</span></p>
+          <a href="#contact" class="mt-6 btn-cta btn-shine inline-flex w-full items-center justify-center gap-2 px-6 py-3 rounded-full font-semibold">Book Now</a>
+        </article>
+
+        <!-- Party Bus -->
+        <article class="package-card reveal rounded-2xl border border-white/10 bg-black-card p-8">
+          <h3 class="font-display text-2xl font-bold text-gold">Party Bus Package</h3>
+          <p class="mt-1 text-sm text-neutral-400">Mobile VIP Experience</p>
+          <ul class="mt-6 space-y-3 text-sm text-neutral-300">
+            <li class="flex gap-2"><span class="text-gold">✦</span> On-board entertainers</li>
+            <li class="flex gap-2"><span class="text-gold">✦</span> Nationwide VIP Service</li>
+            <li class="flex gap-2"><span class="text-gold">✦</span> Sound &amp; lighting</li>
+            <li class="flex gap-2"><span class="text-gold">✦</span> Flexible routes</li>
+          </ul>
+          <p class="mt-6 text-3xl font-bold text-white">from <span class="text-gold-gradient">$450</span></p>
+          <a href="#contact" class="mt-6 btn-cta btn-shine inline-flex w-full items-center justify-center gap-2 px-6 py-3 rounded-full font-semibold">Book Now</a>
+        </article>
+
+        <!-- VIP Casino -->
+        <article class="package-card reveal rounded-2xl border border-white/10 bg-black-card p-8">
+          <h3 class="font-display text-2xl font-bold text-gold">VIP Casino Entertainment</h3>
+          <p class="mt-1 text-sm text-neutral-400">High-Stakes Glamour</p>
+          <ul class="mt-6 space-y-3 text-sm text-neutral-300">
+            <li class="flex gap-2"><span class="text-gold">✦</span> Casino-themed hosts</li>
+            <li class="flex gap-2"><span class="text-gold">✦</span> Dealer-style entertainers</li>
+            <li class="flex gap-2"><span class="text-gold">✦</span> Luxury atmosphere</li>
+            <li class="flex gap-2"><span class="text-gold">✦</span> Corporate &amp; private events</li>
+          </ul>
+          <p class="mt-6 text-3xl font-bold text-white">from <span class="text-gold-gradient">$600</span></p>
+          <a href="#contact" class="mt-6 btn-cta btn-shine inline-flex w-full items-center justify-center gap-2 px-6 py-3 rounded-full font-semibold">Book Now</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DISCOUNTS ===================== -->
+  <section id="discounts" class="py-24 bg-black">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="reveal rounded-3xl border border-crimson/40 bg-gradient-to-br from-crimson/10 to-transparent p-8 sm:p-12">
+        <div class="flex flex-col lg:flex-row lg:items-center gap-8">
+          <div class="flex-1">
+            <span class="inline-flex items-center rounded-full bg-crimson text-white text-sm font-bold uppercase tracking-wider px-4 py-1.5">Up to 25% OFF</span>
+            <h2 class="mt-4 font-display text-3xl sm:text-5xl font-bold text-white">Special <span class="text-gold-gradient">Discounts</span></h2>
+            <p class="mt-3 text-neutral-300">We proudly honor our heroes with exclusive savings.</p>
+            <div class="mt-6 flex flex-wrap gap-3 text-sm font-medium">
+              <span class="rounded-full border border-white/15 px-4 py-2">First Responders</span>
+              <span class="rounded-full border border-white/15 px-4 py-2">Military &amp; Veterans</span>
+              <span class="rounded-full border border-white/15 px-4 py-2">Law Enforcement</span>
+              <span class="rounded-full border border-white/15 px-4 py-2">Doctors &amp; Nurses</span>
+            </div>
+          </div>
+          <a href="tel:+15551234567" class="btn-cta btn-shine inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold shrink-0">
+            Call Richie to Claim
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ENTERTAINERS ===================== -->
+  <section id="entertainers" class="py-24 bg-black-soft">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto reveal">
+        <span class="text-xs font-semibold uppercase tracking-[0.25em] text-silver">Meet The Entertainers</span>
+        <h2 class="mt-3 font-display text-3xl sm:text-5xl font-bold text-gold-gradient">A Diverse Roster of Talent</h2>
+        <p class="mt-4 text-neutral-400">Request your preferred entertainer for a tailored experience.</p>
+      </div>
+
+      <div class="mt-16 grid grid-cols-2 md:grid-cols-3 gap-6">
+        <!-- Card template (monogram placeholder) -->
+        <article class="package-card reveal rounded-2xl border border-white/10 bg-black-card overflow-hidden">
+          <div class="monogram aspect-[3/4] relative flex items-center justify-center overflow-hidden">
+            <div class="text-center">
+              <div class="w-24 h-24 rounded-full border-2 border-gold/40 flex items-center justify-center mx-auto">
+                <span class="font-display text-4xl font-bold text-gold-gradient">L</span>
+              </div>
+              <p class="mt-4 text-[10px] uppercase tracking-[0.3em] text-neutral-500">Photo Coming Soon</p>
+            </div>
+            <img src="assets/images/entertainers/banana-split-girl-bachelor-party-stripper-5.jpg" alt="Layla" class="absolute inset-0 w-full h-full object-cover" loading="lazy" onerror="this.remove()" />
+          </div>
+          <div class="p-5">
+            <h3 class="font-display text-xl font-bold text-gold">Layla</h3>
+            <p class="mt-1 text-xs text-neutral-400">Sultry · Fitness</p>
+            <button type="button" class="mt-4 btn-outline w-full px-4 py-2.5 rounded-full text-sm font-semibold">Request This Entertainer</button>
+          </div>
+        </article>
+
+        <article class="package-card reveal rounded-2xl border border-white/10 bg-black-card overflow-hidden">
+          <div class="monogram aspect-[3/4] relative flex items-center justify-center overflow-hidden">
+            <div class="text-center">
+              <div class="w-24 h-24 rounded-full border-2 border-gold/40 flex items-center justify-center mx-auto">
+                <span class="font-display text-4xl font-bold text-gold-gradient">I</span>
+              </div>
+              <p class="mt-4 text-[10px] uppercase tracking-[0.3em] text-neutral-500">Photo Coming Soon</p>
+            </div>
+            <img src="assets/images/entertainers/banana-split-girl-bachelor-party-stripper-21.jpg" alt="Isabella" class="absolute inset-0 w-full h-full object-cover" loading="lazy" onerror="this.remove()" />
+          </div>
+          <div class="p-5">
+            <h3 class="font-display text-xl font-bold text-gold">Isabella</h3>
+            <p class="mt-1 text-xs text-neutral-400">Graceful · Dance</p>
+            <button type="button" class="mt-4 btn-outline w-full px-4 py-2.5 rounded-full text-sm font-semibold">Request This Entertainer</button>
+          </div>
+        </article>
+
+        <article class="package-card reveal rounded-2xl border border-white/10 bg-black-card overflow-hidden">
+          <div class="monogram aspect-[3/4] relative flex items-center justify-center overflow-hidden">
+            <div class="text-center">
+              <div class="w-24 h-24 rounded-full border-2 border-gold/40 flex items-center justify-center mx-auto">
+                <span class="font-display text-4xl font-bold text-gold-gradient">M</span>
+              </div>
+              <p class="mt-4 text-[10px] uppercase tracking-[0.3em] text-neutral-500">Photo Coming Soon</p>
+            </div>
+            <img src="assets/images/entertainers/Banana-Split-Girls-27.jpg" alt="Mei" class="absolute inset-0 w-full h-full object-cover" loading="lazy" onerror="this.remove()" />
+          </div>
+          <div class="p-5">
+            <h3 class="font-display text-xl font-bold text-gold">Mei</h3>
+            <p class="mt-1 text-xs text-neutral-400">Elegant · Flexibility</p>
+            <button type="button" class="mt-4 btn-outline w-full px-4 py-2.5 rounded-full text-sm font-semibold">Request This Entertainer</button>
+          </div>
+        </article>
+
+        <article class="package-card reveal rounded-2xl border border-white/10 bg-black-card overflow-hidden">
+          <div class="monogram aspect-[3/4] relative flex items-center justify-center overflow-hidden">
+            <div class="text-center">
+              <div class="w-24 h-24 rounded-full border-2 border-gold/40 flex items-center justify-center mx-auto">
+                <span class="font-display text-4xl font-bold text-gold-gradient">S</span>
+              </div>
+              <p class="mt-4 text-[10px] uppercase tracking-[0.3em] text-neutral-500">Photo Coming Soon</p>
+            </div>
+            <img src="assets/images/entertainers/Banana-Split-Girls-28.jpg" alt="Scarlett" class="absolute inset-0 w-full h-full object-cover" loading="lazy" onerror="this.remove()" />
+          </div>
+          <div class="p-5">
+            <h3 class="font-display text-xl font-bold text-gold">Scarlett</h3>
+            <p class="mt-1 text-xs text-neutral-400">Classic · Glamour</p>
+            <button type="button" class="mt-4 btn-outline w-full px-4 py-2.5 rounded-full text-sm font-semibold">Request This Entertainer</button>
+          </div>
+        </article>
+
+        <article class="package-card reveal rounded-2xl border border-white/10 bg-black-card overflow-hidden">
+          <div class="monogram aspect-[3/4] relative flex items-center justify-center overflow-hidden">
+            <div class="text-center">
+              <div class="w-24 h-24 rounded-full border-2 border-gold/40 flex items-center justify-center mx-auto">
+                <span class="font-display text-4xl font-bold text-gold-gradient">N</span>
+              </div>
+              <p class="mt-4 text-[10px] uppercase tracking-[0.3em] text-neutral-500">Photo Coming Soon</p>
+            </div>
+            <img src="assets/images/entertainers/banana-split-girl-bachelor-party-stripper-37.jpg" alt="Naomi" class="absolute inset-0 w-full h-full object-cover" loading="lazy" onerror="this.remove()" />
+          </div>
+          <div class="p-5">
+            <h3 class="font-display text-xl font-bold text-gold">Naomi</h3>
+            <p class="mt-1 text-xs text-neutral-400">Bold · Athletic</p>
+            <button type="button" class="mt-4 btn-outline w-full px-4 py-2.5 rounded-full text-sm font-semibold">Request This Entertainer</button>
+          </div>
+        </article>
+
+        <article class="package-card reveal rounded-2xl border border-white/10 bg-black-card overflow-hidden">
+          <div class="monogram aspect-[3/4] relative flex items-center justify-center overflow-hidden">
+            <div class="text-center">
+              <div class="w-24 h-24 rounded-full border-2 border-gold/40 flex items-center justify-center mx-auto">
+                <span class="font-display text-4xl font-bold text-gold-gradient">S</span>
+              </div>
+              <p class="mt-4 text-[10px] uppercase tracking-[0.3em] text-neutral-500">Photo Coming Soon</p>
+            </div>
+            <img src="assets/images/entertainers/banana-split-girl-bachelor-party-stripper-40.jpg" alt="Sofia" class="absolute inset-0 w-full h-full object-cover" loading="lazy" onerror="this.remove()" />
+          </div>
+          <div class="p-5">
+            <h3 class="font-display text-xl font-bold text-gold">Sofia</h3>
+            <p class="mt-1 text-xs text-neutral-400">Charming · Poise</p>
+            <button type="button" class="mt-4 btn-outline w-full px-4 py-2.5 rounded-full text-sm font-semibold">Request This Entertainer</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT / LEAD FORM ===================== -->
+  <section id="contact" class="py-24 bg-black">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center reveal">
+        <span class="text-xs font-semibold uppercase tracking-[0.25em] text-silver">Contact Us</span>
+        <h2 class="mt-3 font-display text-3xl sm:text-5xl font-bold text-gold-gradient">Get Your Free Quote</h2>
+        <p class="mt-4 text-neutral-400">Call Richie now or fill out the form for a fast callback.</p>
+      </div>
+
+      <form id="quote-form" class="reveal mt-12 rounded-3xl border border-gold/40 bg-black-card p-6 sm:p-10 space-y-6">
+        <div class="grid sm:grid-cols-2 gap-6">
+          <div>
+            <label for="name" class="block text-sm font-medium text-neutral-300 mb-2">Full Name *</label>
+            <input id="name" name="name" type="text" required autocomplete="name" placeholder="Your name"
+              class="w-full rounded-xl border border-white/10 bg-black px-4 py-3 text-neutral-200 placeholder-neutral-500 focus:border-gold focus:outline-none" />
+          </div>
+          <div>
+            <label for="phone" class="block text-sm font-medium text-neutral-300 mb-2">Phone Number *</label>
+            <input id="phone" name="phone" type="tel" required autocomplete="tel" placeholder="(555) 123-4567"
+              class="w-full rounded-xl border border-white/10 bg-black px-4 py-3 text-neutral-200 placeholder-neutral-500 focus:border-gold focus:outline-none" />
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-6">
+          <div>
+            <label for="email" class="block text-sm font-medium text-neutral-300 mb-2">Email *</label>
+            <input id="email" name="email" type="email" required autocomplete="email" placeholder="you@example.com"
+              class="w-full rounded-xl border border-white/10 bg-black px-4 py-3 text-neutral-200 placeholder-neutral-500 focus:border-gold focus:outline-none" />
+          </div>
+          <div>
+            <label for="event-date" class="block text-sm font-medium text-neutral-300 mb-2">Event Date *</label>
+            <input id="event-date" name="event-date" type="date" required
+              class="w-full rounded-xl border border-white/10 bg-black px-4 py-3 text-neutral-200 focus:border-gold focus:outline-none [color-scheme:dark]" />
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-6">
+          <div>
+            <label for="event-type" class="block text-sm font-medium text-neutral-300 mb-2">Event Type *</label>
+            <select id="event-type" name="event-type" required
+              class="w-full rounded-xl border border-white/10 bg-black px-4 py-3 text-neutral-200 focus:border-gold focus:outline-none">
+              <option value="" disabled selected>Select event type</option>
+              <option>Bachelor Party</option>
+              <option>Birthday Party</option>
+              <option>VIP / Casino Event</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label for="package" class="block text-sm font-medium text-neutral-300 mb-2">Preferred Entertainer / Package</label>
+            <input id="package" name="package" type="text" placeholder="e.g. Layla / Party Bus"
+              class="w-full rounded-xl border border-white/10 bg-black px-4 py-3 text-neutral-200 placeholder-neutral-500 focus:border-gold focus:outline-none" />
+          </div>
+        </div>
+
+        <div>
+          <label for="requests" class="block text-sm font-medium text-neutral-300 mb-2">Special Requests</label>
+          <textarea id="requests" name="requests" rows="4" placeholder="Tell us about your event..."
+            class="w-full rounded-xl border border-white/10 bg-black px-4 py-3 text-neutral-200 placeholder-neutral-500 focus:border-gold focus:outline-none resize-none"></textarea>
+        </div>
+
+        <button type="submit" class="btn-cta btn-shine w-full inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-base">
+          Get Free Quote / Call Richie Now
+        </button>
+      </form>
+
+      <div id="form-success" class="hidden reveal text-center mt-12 rounded-3xl border border-gold/40 bg-black-card p-10">
+        <div class="text-4xl">🎉</div>
+        <h3 class="mt-4 font-display text-2xl font-bold text-gold-gradient">Request Received!</h3>
+        <p class="mt-3 text-neutral-300">Thank you — Richie will contact you shortly to confirm your booking.</p>
+        <a href="tel:+15551234567" class="mt-6 btn-cta btn-shine inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold">Call Richie: (555) 123-4567</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="border-t border-white/10 bg-black-soft">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid md:grid-cols-3 gap-10">
+        <div>
+          <div class="flex items-center gap-3">
+            <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="goldGrad2" x1="3" y1="4" x2="21" y2="19" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFE680" />
+                  <stop offset="0.5" stop-color="#FFD700" />
+                  <stop offset="1" stop-color="#D4AF37" />
+                </linearGradient>
+              </defs>
+              <path d="M3 19h18M4 9l4 3 4-6 4 6 4-3-1 9H5L4 9z" fill="url(#goldGrad2)" stroke="#B8860B" stroke-width="0.5" />
+            </svg>
+            <span class="font-display text-lg font-bold text-gold-gradient">One and Only Entertainment</span>
+          </div>
+          <p class="mt-4 text-sm text-neutral-400 leading-relaxed">
+            One and Only Entertainment is an entertainment agency service only. No escort services provided.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-white">Quick Links</h4>
+          <ul class="mt-4 space-y-2 text-sm text-neutral-400">
+            <li><a href="#home" class="hover:text-gold">Home</a></li>
+            <li><a href="#packages" class="hover:text-gold">Packages</a></li>
+            <li><a href="#entertainers" class="hover:text-gold">Meet The Entertainers</a></li>
+            <li><a href="#discounts" class="hover:text-gold">Discounts</a></li>
+            <li><a href="#contact" class="hover:text-gold">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-white">Contact</h4>
+          <p class="mt-4 text-sm text-neutral-400">Ready to book? Reach out directly:</p>
+          <a href="tel:+15551234567" class="mt-3 btn-gold btn-shine inline-flex items-center gap-2 px-5 py-3 rounded-full font-semibold text-sm">
+            Call Richie: (555) 123-4567
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-12 pt-8 border-t border-white/10 text-center text-xs text-neutral-500">
+        &copy; <span id="year"></span> One and Only Entertainment. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
